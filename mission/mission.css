@@ -1,0 +1,55 @@
+body {
+    background-color: #fff;
+    font-size: 20px;
+}
+#content {
+    max-width: 60%;
+    border: 1px solid darkgray;
+    margin: 40px auto;
+    padding: 50px;
+}
+h1 {
+    letter-spacing: .1em;
+}
+#university {
+    color: #035f9c;
+    letter-spacing: .2em;
+    font-size: .9em;
+    margin-bottom: 0;
+}
+#list p {
+    font-style: italic;
+}
+hr {
+    background-color: darkgray;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#statement {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+#statement p {
+    text-align: left;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 10px;
+}
+#list {
+    line-height: 1.5em;
+}
+li {
+    padding: 10px 0px;
+}
