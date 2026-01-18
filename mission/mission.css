@@ -1,3 +1,10 @@
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+.dark img {
+    src: 'byui-logo-white.png';
+}
 body {
     background-color: #fff;
     font-size: 20px;

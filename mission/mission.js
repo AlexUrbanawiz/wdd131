@@ -8,14 +8,12 @@ function changeTheme() {
     
     if(codeValue == 'Dark')
     {
-        bodyElem.style.backgroundColor = '#333333';
-        bodyElem.style.color = '#fff';
         imgElem.setAttribute('src', 'byui-logo-white.png');
+        bodyElem.classList.toggle('dark')
     }
     else if(codeValue == "Light")
     {
-        bodyElem.style.backgroundColor = "#fff"
-        bodyElem.style.color = '#000';
+        bodyElem.classList.toggle('dark')
         imgElem.setAttribute('src', 'byui-logo-blue.webp');
     }
 }
