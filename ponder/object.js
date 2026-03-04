@@ -38,7 +38,7 @@ function sectionTemplate(section) {
     return `<tr>
         <td>${section.sectionNum}</td>
         <td>${section.roomNum}</td>
-        <td>${section.enrolled}</td>
+        <td>${section.enrolled}</td>  
         <td>${section.days}</td>
         <td>${section.instructor}</td></tr>`
 }
