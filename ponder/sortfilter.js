@@ -1,10 +1,6 @@
+const nums = [12,10,8,3];
 
-const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
-
-
-nums = [12, 10, 8, 15, 3];
 console.log(nums.sort(compareFn));
-
 
 function compareFn(a,b) {
   if (a < b) {
@@ -14,18 +10,23 @@ function compareFn(a,b) {
   }
  return 0;
 }
+const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
 
 let simpleSort = simpleList.sort();
-console.log(simpleSort);
 
-let lowerList = simpleList.map(item => item.toLowerCase());
-console.log(lowerList);
+let lowerList = simpleList.map(function(item) {
+    return item.toLowerCase();
+});
+
 let lowerSort = lowerList.sort();
-console.log(lowerSort);
 
-let searchTerm = 'an';
-let filterFruit = lowerSort.filter(item => item.includes(searchTerm));
-console.log(filterFruit)
+let searchTerm = "an";
+
+let filterFruit = lowerSort.filter(searchFruit);
+function searchFruit(item) {
+  return item.includes(searchTerm);
+}
+console.log(filterFruit);
 
 
 const products = [
@@ -43,21 +44,17 @@ const products = [
   }
 ];
 
-function compareProductFn(a,b) {
-  if (a.productName < b.productName) {
+function compareFn(a, b) {
+  if (a.price < b.price) {
     return -1;
-  } else if (a.productName > b.productName) {
+  } else if (a.price > b.price) {
     return 1;
   }
- return 0;
+  return 0;
 }
 
-
-let productSort = products.sort(compareProductFn);
-console.log(productSort)
-
-
-
+console.log(products.sort(compareByPrice));
+//  use for part 2 hw 
 const animals = [
   {
     name: "Lion",
@@ -80,3 +77,22 @@ const animals = [
     traits: ["quiet", "independent", "curious", "cuddly"]
   }
 ];
+let query = "DOG";
+
+let filteredList = animals.filter(searchList);
+function searchList(item) {
+  return item.name.toLowerCase().includes(query.toLowerCase());
+}
+console.log(filteredList);
+              
+let queryTrait = "cuddly";
+
+let filteredTrait = animals.filter(searchTrait);
+
+function searchTrait(item) {
+  return item.traits.find(trait =>
+    trait.toLowerCase().includes(queryTrait.toLowerCase())
+  );
+}
+
+console.log(filteredTrait);
