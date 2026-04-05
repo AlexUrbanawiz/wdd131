@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="styles/site-plan-style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Wishlist Manager Site Plan</h1>
+      <h2>Alex Urbanawiz</h2>
+      <h2>WDD 131-03</h2>
+    </header>
+    <main>
+      <hr />
+      <h2>Overview</h2>
+      <h3>Purpose</h3>
+      <p>
+        This is a site to make creating wishlists that contain content from various sites easier as all the links are stored in one place.
+        It is also convient as it will save the data between sessions so you dont have to worry about losing all the items you have put on your list.
+      </p>
+
+      <h3>Audience</h3>
+      <p>
+        It is designed for people who want to keep track of things they want to buy themselves. As the list cant be shared with others due to the data persisting on your device it is useful to track what a person wants to buy for themselves.
+        It can also be used as a planning document, a place to keep organaized what all the gifts youll be buying for the holidays are and where they are as well. And because you enter the price with the item it makes keeping track of your budget easier as well.
+      </p>
+
+      <h3>Dynamic elements</h3>
+      <p>
+        Javascript is used to dyanmically add and remove items from the list, as well as to store them on your device. It will do so by having an array of items, and it will append/pop items from the list as they are entered or deleted. It will use local storage to keep track of the data you have saved to the list. there will be item objects with the name, price, and url for each item to make everything standardized.
+      </p>
+
+      <hr />
+      <h2>Branding</h2>
+      <h3>Website Logo</h3>
+      <img src="images/wishlist-generator2.png" alt="A logo with the text Wishlist Generator and an icon of a list" style="width: 150px;">
+
+      <hr />
+      <h2>Style Guide</h2>
+
+      <h3>Color Palette</h3>
+      Palette URL:
+      <a href="https://coolors.co/8b1a1a-2d5a3d-4a8c7f-c4a35a-f5ecd7" target="_blank">
+        https://coolors.co/8b1a1a-2d5a3d-4a8c7f-c4a35a-f5ecd7
+      </a>
+
+      <table class="colors">
+        <tbody>
+          <tr>
+            <th>Primary</th>
+            <th>Secondary</th>
+            <th>Accent 1</th>
+            <th>Accent 2</th>
+          </tr>
+          <tr>
+            <td class="primary">#2D5A3D</td>
+            <td class="secondary">#8B1A1A</td>
+            <td class="accent1">#C4A35A</td>
+            <td class="accent2">#F5ECD7</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Typography</h3>
+
+      <h4>Heading Font: Arvo</h4>
+      <h4>Paragraph Font: Lato</h4>
+
+      <h3>Normal paragraph example</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+
+      <h3>Colored paragraph example</h3>
+      <p class="colored">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <hr />
+
+      <h2>Content</h2>
+      <h3>Home Page</h3>
+      <p>
+        The home page contains a header with the logo, title, and banner image for the site. then there is a brief body describing the site, then the form where data is entered. Underneath the form is the list where the items are displayed.
+      </p>
+
+      <h2>Wireframes</h2>
+      <p>The site is a single page application with one view.</p>
+      </p>
+      <img src="images/wireframe.png" alt="home page wireframe" />
+    </main>
+  </body>
+</html>
