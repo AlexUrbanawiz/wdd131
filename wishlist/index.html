@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist Manager</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wishlist Manager</h1>
+    </header>
+    <form id="item-form">
+        <div>
+            <label for="item-name">Item Name</label>
+            <input type="text" id="item-name" name="item-name" required>
+        </div>
+        <div>
+            <label for="item-price">Item Price</label>
+            <input type="number" min="0" id="item-price" name="item-price" required>
+        </div>
+        <div>
+            <label for="item-url">Item URL</label>
+            <input type="url" id="item-url" name="item-url" required>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <ul id="wishlist">
+        <li id="emptyMessage">No items in the wishlist</li>
+    </ul>
+</body>
+</html>
